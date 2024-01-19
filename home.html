@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Your Project</title>
+</head>
+<body>
+
+    <header>
+        <!-- Your logo goes here -->
+        <img src="Group.svg" alt="Project Logo" class="project-logo">
+        <h1>ResumeBuild</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Templet</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    
+    </header>
+
+   
+
+    <section>
+        <div class="project-details">
+            <h1>Free  <span style="color: #F53379; font-size: 40px;  font-weight: bold; word-wrap: break-word">Resume</span> Builder</h1>
+            <p class="project-description">
+                Build your brand<span style="color: #FF0000">-new</span> resume in as little as 5 minutes
+            </p>
+            <h2>TRY IT FOR  <span style="color: #FF0000; font-size: 20px;  font-weight: bold; text-transform: uppercase; word-wrap: break-word">FREE</span>
+            </h2>
+            <a href="#" class="resume-button">Build Resume</a>
+        </div>
+
+        <div class="project-image">
+            <!-- Your big image goes here -->
+            <img src="adire.png" alt="Project Image" style="max-width: 100%;">
+        </div>
+        
+    </section>
+    <div class="template">
+        <h1>Discover more custom resume templates.</h1>
+        <img class="templateimg" src="template.png" alt="Your Image">
+        <a href="#" class="showme">Show More</a>
+
+    </div>
+
+    <div class="animation">
+        <h1>How to make a resume</h1>
+        <div class="round-button">1</div>
+        <div class="round-button">2</div>
+        <div class="round-button">3</div>
+        <div class="round-button">4</div>
+        <div class="round-button">5</div>
+        <h2 id="countryName">Country Name</h2>
+        <h3 id="capitalName">Capital</h3>
+
+        <script>
+            const buttons = document.querySelectorAll('.round-button');
+            const countryHeading = document.getElementById('countryName');
+            const capitalHeading = document.getElementById('capitalName');
+    
+            function glowSequentially(index) {
+                if (index < buttons.length) {
+                    buttons[index].classList.add('glow');
+                    setTimeout(() => {
+                        buttons[index].classList.remove('glow');
+    
+                        // Update content for h2 and h3
+                        const countryData = getCountryData(index);
+                        countryHeading.innerText = countryData.name;
+                        capitalHeading.innerText = countryData.capital;
+    
+                        glowSequentially((index + 1) % buttons.length);
+                    }, 2000);
+                }
+            }
+    
+            function getCountryData(index) {
+                const countries = [
+                    { name: 'Contact Information:', capital: 'Include your full name, phone number, email address, and, if applicable, your LinkedIn profile.' },
+                    { name: 'Resume Objective or Summary:', capital: 'Write a brief objective or summary that provides an overview of your career goals and qualifications.' },
+                    { name: 'Professional Experience:', capital: 'List your work experience in reverse chronological order (most recent job first).' },
+                    { name: 'Education:', capital: 'Include your educational background, starting with your most recent degree.' },
+                    { name: 'Skills and Achievements:', capital: 'Create a section that showcases your key skills relevant to the job.' }
+                ];
+    
+                return countries[index];
+            }
+    
+            // Call the function after a brief delay
+            setTimeout(() => {
+                glowSequentially(0);
+            }, 1000); // Adjust the delay as needed
+        </script>
+    </div>
+    </div>
+ 
+
+</body>
+</html>
+
