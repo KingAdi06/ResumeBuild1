@@ -147,6 +147,11 @@ footer {
     line-height: normal;
     text-decoration-line: underline;
 }
+.template h2{
+    color: #000;
+    margin-top: 60px;
+}
+
 
 .showme {
     display: inline-block;
@@ -210,3 +215,196 @@ footer {
         color: black;
     }
 }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.custom-div {
+    width: 500px;
+    height: 310px;
+    flex-shrink: 0;
+    margin-top: 50px;
+    border-radius: 26px;
+    background: linear-gradient(180deg, #ABF7F8 0%, #E6A2F1 100%);
+    margin-right: 10px; /* Adjust margin as needed */
+}
+
+.custom-image {
+    width: 182px;
+    height: 165.717px;
+    margin-right: 10px;
+}
+.box {
+    margin: 20px; /* Adjust margin as needed */
+}
+
+.container h2,
+.container p {
+    /* Your shared styles for h2 and p within .container */
+    padding: 15px; /* Add the desired padding value */
+    font-weight: bold;
+   
+}
+.container p {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.custom-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .logo {
+    width: 50px; /* Set the width of your logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Adjust as needed */
+    margin-left: 50px;
+  }
+
+  .product-name {
+    font-size: 30px; /* Adjust as needed */
+    font-weight: bold;
+    color: #A053CF; 
+    margin-left: 10px;
+  }
+
+ 
+       
+        
+
+        footer {
+         
+            color:black;
+            text-align: left; /* Change to left alignment */
+            padding: 20px;
+            display: flex;
+            margin-left: 20px;
+          
+           
+            flex-direction: row; /* Align elements in a row */
+            justify-content: space-between; /* Add space between elements */
+        }
+
+        .all{
+            margin-left: 0px;
+        }
+
+        .stay-connected-heading {
+            width: 200px;
+            height: 30px;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 0px;
+            /* Add any other styles you want for the h2 */
+        }
+
+        .social-icons {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        .social-icons img,
+        .footer-images img {
+            width: 30px; /* Adjust the size as needed */
+            margin: 0 10px; /* Adjust the spacing between icons */
+        }
+
+        .footer-images {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column; /* Align images in a column */
+        }
+
+        .footer-links {
+         
+            display: flex;
+            flex-direction: column; /* Align links in a column */
+            align-items: flex-start; /* Align vertically */
+            margin-top: 20px;
+        }
+
+        .footer-links a {
+            color: black;
+            text-decoration: none;
+            margin-bottom: 10px; /* Adjust the spacing between links */
+        }
+        .sociallinks{
+            display: flex;
+            flex-direction: row;
+            color: black; /* Set the color to black */
+            font-size: 24px; /* Set the font size */
+            margin-right: 60px;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            margin-top: 20px;
+
+        }
+        .imgplay{
+            display: flex;
+            flex-direction: column
+            ;
+            margin-top: 30px;
+            
+
+        }
+        .footer-links .about-resume-builder {
+            font-weight: bold;}
+        .footer-linkse .about-resume-builder {
+                font-weight: bold;
+                font-size: 24px;
+              
+            }
+        .stay {
+            margin-bottom: 10px; /* Adjust the margin as needed */
+            }
+        .footer-linkse {
+            
+            display: flex;
+            flex-direction: column; /* Align links in a column */
+            align-items: flex-start; /* Align vertically */
+            margin-top: 50px;
+          
+                }
+        
+        .footer-linkse a {
+            color: black;
+            text-decoration: none;
+            margin-bottom: 10px; /* Adjust the spacing between links */
+                }   
+                
+        .footer-linkse a {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .centered-content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            
+            margin-top: 20px;
+        }
+
+        
+        .centered-content img {
+            margin-bottom: 10px;
+            height: 30px;
+           
+        }
+        .centered-content p {
+           margin-right: 30px;
+           font-weight: 500;
+           
+        }
+        .copyright-content{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
